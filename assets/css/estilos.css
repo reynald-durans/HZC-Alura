@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'icones';
+  src: url(../font/icones.ttf);
+}
+
+:root {
+  --corpo: #1D232A;
+  --cabecalho: #1D232A;
+  --cabecalho-mobile: #15191C;
+  --menu-lateral: #15191C;
+  --cartao: #2C343A;
+  --fonte: #FFFFFF;
+  --fonte-alternativa: #95999C;
+  --links: #0480DC;
+  --botao: #0480DC;
+  --sombras: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+body {
+  background-color: var(--corpo);
+  font-family: 'Open Sans', 'icones', sans-serif;
+  color: var(--fonte);
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cabecalho-mobile);
+  padding: 8px 16px;
+  box-shadow: var(--sombras);
+}
+
+.cabecalho__menu i::before {
+  content: "\e904";
+  font-size: 1.5rem;
+}
+
+.cabecalho__notificacao i::before {
+  content: "\e906";
+  font-size: 1.5rem;
+}
+
+.cabecalho__logo {
+  width: 2.5rem;
+}
