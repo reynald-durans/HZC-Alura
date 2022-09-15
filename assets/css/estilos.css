@@ -44,3 +44,73 @@ body {
 .cabecalho__logo {
   width: 2.5rem;
 }
+
+.menu-lateral {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cabecalho-mobile);
+  width: 75vw;
+  height: 100vh;
+
+  position: absolute;
+  left: -100vw;
+  transition: .25s;
+}
+
+.menu-lateral--ativo {
+  left: 0;
+  transition: .25s;
+}
+
+.menu-lateral__logo {
+  width: 7.375rem;
+  align-self: center;
+  padding: 1rem;
+}
+
+.menu-lateral__link {
+  height: 4rem;
+  color: var(--fonte-alternativa);
+  padding-left: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu-lateral__link--ativo {
+  color: var(--fonte);
+  padding-left: 3.5rem;
+  border-left: 0.5rem solid var(--fonte);
+}
+
+.menu-lateral__link::before {
+  content: "\e900";
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1.5rem;
+}
+
+.menu-lateral__link--inicio::before {
+  content: "\e902";
+}
+
+.menu-lateral__link--videos::before {
+  content: "\e90e";
+}
+
+.menu-lateral__link--picos::before {
+  content: "\e909";
+}
+
+.menu-lateral__link--integrantes::before {
+  content: "\e903";
+}
+
+.menu-lateral__link--camisas::before {
+  content: "\e900";
+}
+
+.menu-lateral__link--pinturas::before {
+  content: "\e90a";
+}
